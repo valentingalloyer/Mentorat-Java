@@ -4,7 +4,6 @@ import com.example.demo.model.Pokemon;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -87,6 +86,8 @@ public class DemoApplication {
 			// Affichage propre pour lier la clé à la liste des noms
 			System.out.println(type + " -> " + list.stream().map(Pokemon::name).toList());
 		});
+
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 	// -------------------------------------------------------------------------
